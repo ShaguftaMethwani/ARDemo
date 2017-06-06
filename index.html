@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+    <script src="https://aframe.io/releases/0.5.0/aframe.js"></script>
+
+<script src="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:inherit; text-align: center; z-index: 1;'>
+	
+</div>
+	<a-scene embedded artoolkit='sourceType: webcam;'> 
+		<a-marker>
+			<a-box position='0 0.5 0' material='opacity: 0.5; side: double'>
+				<a-torus-knot radius='0.27' radius-tubular='0.05'>
+					<a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+				</a-torus-knot>
+			</a-box>
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+</html>
